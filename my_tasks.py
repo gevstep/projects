@@ -116,5 +116,30 @@ elif third > first and first == second:
 	print(first, second, third)
 else:
 	print("All entered numbers is equal:", user_number)
+# Task 50
+user_number = int(input("Enter three digit number: "))
+first = int(user_number / 100)
+second = int(user_number % 100 / 10)
+third = int(user_number % 10)
+if first < second and first < third and second < third:
+	print(third, second, first)
+elif first < second and first < third and third < second:
+	print(second, third, first)
+elif second < first and second < third and first < third:
+	print(third, first, second)
+elif second < first and second < third and third < first:
+	print(first, third, second)
+elif third < first and third < second and second < first:
+	print(first, second, third)
+elif third < first and third < second and first < second:
+	print(second, first, third)
+elif first < second and second == third:
+	print(second, third, first)
+elif second < first and first == third:
+	print(first, third, second)
+elif third < first and first == second:
+	print(first, second, third)
+else:
+	print("All entered numbers is equal:", user_number)
 
 	
