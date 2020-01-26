@@ -1,3 +1,10 @@
+# Temperature celsius to farenheit and varsiverse
+celsius_input = float(input('Enter degree in celsius: '))
+farenheit_degree = (celsius_input * 9/5) + 32
+print(farenheit_degree)
+farenheit_input = float(input("Enter degree in farenheit: "))
+celsius_degree = (farenheit_input - 32) * 5/9
+print(celsius_degree)
 # Task 41
 first_number = int(input("Enter first number: "))
 second_number = int(input("Enter second number: "))
@@ -141,5 +148,55 @@ elif third < first and first == second:
 	print(first, second, third)
 else:
 	print("All entered numbers is equal:", user_number)
+# Task 51
+number_inputed = int(input("Enter four digit number: "))
+pousend_number = number_inputed / 1000
+pousend_number = int(pousend_number)
+handred_number = number_inputed % 1000 / 100
+handred_number = int(handred_number)
+tens_number = number_inputed % 100 / 10
+tens_number = int(tens_number)
+point_number = number_inputed % 10
+t = False
+if pousend_number + handred_number == tens_number + point_number:
+	t = True
+	print(t)
+else:
+	print(t)
+# Task 53
+number_inputed = input("Enter four digit number: ")
+t = 0
+if "1" in number_inputed:
+	t = 1
+	print(t)
+else:
+	print(t)
+# Task 54
+number_inputed = int(input("Enter four digit number: "))
+pousend_number = number_inputed / 1000
+pousend_number = int(pousend_number)
+handred_number = number_inputed % 1000 / 100
+handred_number = int(handred_number)
+tens_number = number_inputed % 100 / 10
+tens_number = int(tens_number)
+point_number = number_inputed % 10
+y = "s"
+if tens_number + point_number == 5:
+	print(y)
+else:
+	y = "d"
+	print(y)
+# Task 55
+number_inputed = int(input("Enter four digit number: "))
+pousend_number = number_inputed / 1000
+pousend_number = int(pousend_number)
+handred_number = number_inputed % 1000 / 100
+handred_number = int(handred_number)
+tens_number = number_inputed % 100 / 10
+tens_number = int(tens_number)
+point_number = number_inputed % 10
+if tens_number * point_number == 12:
+	print("y = 12")
+else:
+	print("y = 0")
 
-	
